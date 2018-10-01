@@ -13,3 +13,16 @@ user_input = get_user_input()
 add_value(user_input)
 add_value(get_user_input(),get_last_block_chain_value())
 print_chain()
+
+
+print("Done")
+while True:
+    user_input=get_user_input()
+    if user_input == 0:
+    
+        break
+    
+    add_value(user_input,get_last_block_chain_value())
+    for block in blockchain:
+        print("Outputting block: ")
+        print(block)
